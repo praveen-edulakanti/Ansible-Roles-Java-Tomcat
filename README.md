@@ -1,5 +1,6 @@
 Setting hostname in "Target Server": 
-	sudo hostnamectl set-hostname nodeserver-1 
+
+   sudo hostnamectl set-hostname nodeserver-1
 
 Steps: Password less Authentication in "Ansible Controller Server" and "Target Server"(nodeserver-1)
 
@@ -30,4 +31,8 @@ From "Ansible Controller Server":
  
 3) Now we can test connection from Ansible Engine to Mange Node using: 
   
-  ansible all -m ping 
+     ansible all -m ping 
+
+  For Installation of Java and Tomcat run below playbook and change versions in vars folder.
+  
+     ansible-playbook install_config.yaml
