@@ -1,0 +1,5 @@
+---
+# tasks file for updating_repos
+- name: Updating repos
+  apt:
+   name: "*"

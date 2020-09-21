@@ -1,0 +1,8 @@
+---
+ - name: Playbook using Roles
+   hosts: all
+   become: yes
+   roles:
+    - updating_repos
+    - java  
+    - tomcat  

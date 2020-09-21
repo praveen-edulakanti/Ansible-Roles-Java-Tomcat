@@ -1,0 +1,12 @@
+---
+# tasks file for java
+ - name: Installing required java
+   apt:
+    name: "{{req_java}}"
+    state: present
+ - name: Setting default java
+   alternatives:
+    name: java
+    link: /usr/bin/java
+    #path: /usr/lib/jvm/{{set_java}}/jre/bin/java
+    path: /usr/lib/jvm/{{set_java}}/bin/java

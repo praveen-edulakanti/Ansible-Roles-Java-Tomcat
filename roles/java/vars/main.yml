@@ -1,0 +1,4 @@
+---
+# vars file for java
+ req_java: openjdk-11-jre-headless
+ set_java: java-11-openjdk-amd64
