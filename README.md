@@ -7,6 +7,7 @@ Steps: Password less Authentication in "Ansible Controller Server" and "Target S
 1) Create same user(ansadmin) across all servers and provide password  for all users.
 
 	sudo useradd -m ansadmin
+	
 	sudo passwd ansadmin
 	
 2) Add username in visudo
@@ -34,7 +35,10 @@ From "Ansible Controller Server":
 2) Now login to remote server without providing password with the following command:
 	
 	ssh username@hostname
- or ssh nodeserver-1_IP from ansadmin user
+	
+        or 
+	
+	ssh nodeserver-1_IP from ansadmin user
  
 3) Now we can test connection from Ansible Engine to Mange Node using: 
   
